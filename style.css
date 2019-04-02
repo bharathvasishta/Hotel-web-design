@@ -1,0 +1,418 @@
+
+	@import 'http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css';
+	
+    @import url('https://fonts.googleapis.com/css?family=Mrs+Sheppards|Quicksand');
+
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+/*.container{
+    margin: 0 auto;
+    
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 40%;
+    background-color:forestgreen;  
+    background-image: url(Images/wp2062041.jpg);
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}*/
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url(Images/apartment-architecture-atmosphere-271676.jpg);
+    background-size: cover;
+    animation: backslide 12s infinite;
+    
+}
+@keyframes backslide{
+    35%{background-image: url(Images/ceiling-clean-contemporary-1457842.jpg);}
+    70%{background-image: url(Images/bed-bedroom-cabinet-1864913.jpg);}
+    100%{background-image: url(Images/apartment-architecture-atmosphere-271676.jpg);}
+}
+.p1{
+    margin-left: 60px;
+    margin-top: 40vh;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    animation: slide 3s infinite;
+    opacity: 0;
+    color: white;
+    font-size: 20pt;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn{
+     margin-left: 60px;
+    margin-top: 58vh;
+    width: 200px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.7);
+    border-style: none;
+    color: white;
+    border: 2px solid white;
+   animation: btnslide 3s infinite;
+    opacity: 0;
+    cursor: pointer;
+}
+@keyframes btnslide{
+     10%{opacity: 1;}
+    45%{opacity: 6;}
+    100%{
+        margin-left: 100px;
+        
+    }
+}
+@keyframes slide{
+    10%{opacity: 1;}
+    45%{opacity: 6;}
+   
+    100%{
+        margin-left: 100px;
+    }
+}
+.p1
+{
+    animation-delay: 0s;
+}
+header{
+    
+    background-color: white;
+    position: relative;
+    z-index: 999;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 10px 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    border-radius: 24px;
+    box-sizing: border-box;
+}
+
+.logo{
+    padding: 15px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 20pt;
+    border-radius: 25px;
+    border-bottom-right-radius: 0px;
+    text-decoration: none;
+    float: left;
+    z-index: 99;
+}
+ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      background: white;
+      position: relative;
+}
+
+ul li {
+      display: inline-block;
+    color: black;
+}
+
+ul li a {
+      color:dimgray;
+      text-decoration: none;
+      padding:20px;
+    padding-left: 54px;
+      display: block;
+}
+
+ul li:hover {
+   
+    border-bottom:2px solid black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+ul ul {
+      position: absolute;
+      min-width: 200px;
+      background: white;
+      display: none;
+}
+
+ul ul li {
+      display: block;
+      background: white;
+}
+
+ul li:hover ul {
+      display: block;
+    color: white;
+    transition: 0.5s;
+    border-bottom:2px solid black;
+}
+
+
+ul li i {
+      color: black;
+      float: right;
+      padding-left: 17px;
+}
+
+nav div {
+      width: 100%;
+      color: black;
+      font-size: 24px;
+      padding: 0.8em;
+      cursor: pointer;
+      display: none;
+    margin-left: 220px;
+}
+
+@media(max-width: 768px) {
+      nav div {
+            display: block;
+      }
+
+      ul {
+            display: none;
+            position: static;
+            background:white;
+      }
+
+      ul li {
+            display: block;
+      }
+
+      ul ul {
+            position: static;
+            background: white;
+      }
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px  3px;
+    position: fixed;
+}
+.social li{
+    display: inline-block;
+}
+
+.text1{
+    text-align: center;
+    
+    margin: 100px
+}
+.text1 h1{
+    font-family: 'Quicksand', sans-serif;
+}
+.text1 p{
+    font-family: 'Quicksand', sans-serif;
+}
+.cardcont{
+    position: relative;
+    width: auto;
+    margin: auto auto ;
+    height: auto;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    margin: auto 40px;
+ 
+    
+}
+.cardcont .card{
+    position: relative;
+    height: auto;
+    
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.cardcont .card h1{
+
+}
+.cardcont .card p{
+    font-weight:lighter;
+}
+.imgtxt{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    background-image: url(Images/bed-bedroom-clean-775219.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    transform-style: preserve-3d;
+    transform: perspective(800px);
+    margin-top: 40px;
+   
+}
+.imgtxt h1{
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 65pt;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+} 
+.imgtxt h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20pt;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+} 
+.imgtxt h1, .imgtxt h2{
+    transition: all 2s ease;
+}
+.imgtxt.hidden h1{
+    opacity: 0;
+    transform: translate3d(0,0,400px) rotateY(-40deg);
+}
+.imgtxt.hidden h2{
+    opacity: 0;
+    transform: translate3d(0,0,400px) rotateY(+60deg);
+}
+
+
+.img1{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+#overlay-2{
+    background-image: url(Images/img_7.jpg);
+    margin-top: 100px;
+    
+}
+#overlay-2 h1{
+    text-transform: none;
+}
+#overlay-3{
+    background-image: url(Images/building-chair-comfort-276528.jpg);
+    margin-top: 100px;
+    
+}
+#overlay-3 h1{
+    text-transform: none;
+}
+#overlay-4{
+    background-image: url(Images/bookcase-chairs-clean-667838.jpg);
+    margin-top: 100px;
+    
+}
+#overlay-4 h1{
+    text-transform: none;
+    padding-bottom: 30px;
+}
+.sociallinks{
+     width: 100%;
+    height: 100px;
+    margin-top: 80px;
+    background-color:gray;
+    text-align: center;
+}
+
+.sociallinks a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20pt;
+    color: white;
+    
+    padding-left: 20px;
+}
+
+.footer{
+    margin: 0;
+     width: 100%;
+    height: 125px;
+    background-color:black;
+    text-align: center;
+    padding: 50px 0px;
+}
+.footer h3{
+    
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    
+}
+.footer p{
+    font-family: 'Quicksand', sans-serif;
+    color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
